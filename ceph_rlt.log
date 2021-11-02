@@ -1,0 +1,78 @@
+root@eee:~# rados bench -p scbench -t 4 -b 1024 10 write --no-cleanup
+hints = 1
+Maintaining 4 concurrent writes of 1024 bytes to objects of size 1024 for up to 10 seconds or 0 objects
+Object prefix: benchmark_data_eee_19100
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       4      1008      1004  0.980431  0.980469  0.00212129  0.00397848
+    2       4      2009      2005  0.978929  0.977539  0.00419893  0.00398441
+    3       4      2983      2979  0.969651  0.951172  0.00282921  0.00402593
+    4       4      3960      3956  0.965743  0.954102  0.00346234  0.00404255
+    5       4      4966      4962  0.969063  0.982422  0.00214413  0.00402886
+    6       4      5930      5926   0.96444  0.941406  0.00278014  0.00404884
+    7       4      6934      6930  0.966717  0.980469  0.00305839  0.00403943
+    8       4      7915      7911  0.965618  0.958008  0.00279796  0.00404394
+    9       4      8895      8891  0.964655  0.957031  0.00271598  0.00404821
+   10       4      9900      9896  0.966325  0.981445   0.0023741  0.00404103
+Total time run:         10.002242
+Total writes made:      9900
+Write size:             1024
+Object size:            1024
+Bandwidth (MB/sec):     0.96658
+Stddev Bandwidth:       0.0155243
+Max bandwidth (MB/sec): 0.982422
+Min bandwidth (MB/sec): 0.941406
+Average IOPS:           989
+Stddev IOPS:            15
+Max IOPS:               1006
+Min IOPS:               964
+Average Latency(s):     0.0040405
+Stddev Latency(s):      0.00720933
+Max latency(s):         0.0638717
+Min latency(s):         0.00172728
+root@eee:~# rados bench -p scbench 10 seq
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1      16      2086      2070   2.02119   2.02148  0.00363958  0.00771097
+    2      16      4067      4051   1.97776   1.93457  0.00201158  0.00788543
+    3      16      6053      6037   1.96493   1.93945  0.00180753  0.00794034
+    4      16      8026      8010   1.95534   1.92676  0.00125698  0.00798099
+Total time run:       4.914839
+Total reads made:     9900
+Read size:            1024
+Object size:          1024
+Bandwidth (MB/sec):   1.9671
+Average IOPS:         2014
+Stddev IOPS:          45
+Max IOPS:             2070
+Min IOPS:             1973
+Average Latency(s):   0.00793494
+Max latency(s):       0.0856266
+Min latency(s):       0.00031833
+root@eee:~# rados bench -p scbench 10 rand
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1      15     14574     14559   14.2159   14.2178 0.000905996  0.00109239
+    2      16     28452     28436   13.8831   13.5518 0.000949758  0.00111853
+    3      15     42414     42399   13.8003   13.6357 0.000434025  0.00112572
+    4      16     56298     56282   13.7393   13.5576  0.00112797  0.00113107
+    5      16     70251     70235   13.7164    13.626 0.000908965  0.00113287
+    6      16     84357     84341    13.726   13.7754 0.000929527  0.00113208
+    7      15     98392     98377   13.7231    13.707 0.000980875  0.00113239
+    8      16    111946    111930    13.662   13.2354  0.00399977  0.00113746
+    9      16    126163    126147   13.6865   13.8838 0.000795279  0.00113548
+Total time run:       10.000642
+Total reads made:     139636
+Read size:            1024
+Object size:          1024
+Bandwidth (MB/sec):   13.6355
+Average IOPS:         13962
+Stddev IOPS:          274
+Max IOPS:             14559
+Min IOPS:             13553
+Average Latency(s):   0.00113981
+Max latency(s):       0.0212319
+Min latency(s):       0.000158845
+root@eee:~# 

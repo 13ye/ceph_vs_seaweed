@@ -1,0 +1,121 @@
+/ # /usr/bin/weed benchmark -c 4 -size 1024 -n 262144 -fsync
+This is SeaweedFS version 30GB 2.76 1b90d607 linux amd64
+I1102 13:01:27   135 masterclient.go:96] client masterClient Connecting to master localhost:9333
+
+------------ Writing Benchmark ----------
+Completed 4806 of 262144 requests, 1.8% 4805.9/s 4.8MB/s
+Completed 9670 of 262144 requests, 3.7% 4863.5/s 4.9MB/s
+Completed 14585 of 262144 requests, 5.6% 4915.4/s 4.9MB/s
+Completed 19560 of 262144 requests, 7.5% 4973.0/s 5.0MB/s
+Completed 24543 of 262144 requests, 9.4% 4985.0/s 5.0MB/s
+Completed 29502 of 262144 requests, 11.3% 4959.2/s 5.0MB/s
+Completed 34419 of 262144 requests, 13.1% 4917.1/s 4.9MB/s
+Completed 39324 of 262144 requests, 15.0% 4905.0/s 4.9MB/s
+Completed 44238 of 262144 requests, 16.9% 4914.0/s 4.9MB/s
+Completed 49094 of 262144 requests, 18.7% 4856.0/s 4.9MB/s
+Completed 54271 of 262144 requests, 20.7% 5176.9/s 5.2MB/s
+Completed 59226 of 262144 requests, 22.6% 4955.1/s 5.0MB/s
+Completed 63966 of 262144 requests, 24.4% 4739.7/s 4.8MB/s
+Completed 69078 of 262144 requests, 26.4% 5112.3/s 5.1MB/s
+Completed 73957 of 262144 requests, 28.2% 4879.0/s 4.9MB/s
+Completed 78368 of 262144 requests, 29.9% 4410.8/s 4.4MB/s
+Completed 83100 of 262144 requests, 31.7% 4731.8/s 4.8MB/s
+Completed 88014 of 262144 requests, 33.6% 4914.1/s 4.9MB/s
+Completed 93076 of 262144 requests, 35.5% 5062.1/s 5.1MB/s
+Completed 98136 of 262144 requests, 37.4% 5060.1/s 5.1MB/s
+Completed 102888 of 262144 requests, 39.2% 4751.9/s 4.8MB/s
+Completed 106834 of 262144 requests, 40.8% 3946.0/s 4.0MB/s
+Completed 111659 of 262144 requests, 42.6% 4825.2/s 4.9MB/s
+Completed 116480 of 262144 requests, 44.4% 4820.0/s 4.9MB/s
+Completed 121319 of 262144 requests, 46.3% 4826.2/s 4.9MB/s
+Completed 126054 of 262144 requests, 48.1% 4747.0/s 4.8MB/s
+Completed 130903 of 262144 requests, 49.9% 4850.2/s 4.9MB/s
+Completed 135790 of 262144 requests, 51.8% 4885.5/s 4.9MB/s
+Completed 140707 of 262144 requests, 53.7% 4918.5/s 5.0MB/s
+Completed 145543 of 262144 requests, 55.5% 4836.5/s 4.9MB/s
+Completed 150298 of 262144 requests, 57.3% 4753.5/s 4.8MB/s
+Completed 155158 of 262144 requests, 59.2% 4861.5/s 4.9MB/s
+Completed 159837 of 262144 requests, 61.0% 4678.6/s 4.7MB/s
+Completed 164581 of 262144 requests, 62.8% 4744.5/s 4.8MB/s
+Completed 169385 of 262144 requests, 64.6% 4801.6/s 4.8MB/s
+Completed 174260 of 262144 requests, 66.5% 4877.4/s 4.9MB/s
+Completed 179058 of 262144 requests, 68.3% 4796.9/s 4.8MB/s
+Completed 183988 of 262144 requests, 70.2% 4931.1/s 5.0MB/s
+Completed 189331 of 262144 requests, 72.2% 5343.1/s 5.4MB/s
+Completed 194072 of 262144 requests, 74.0% 4740.2/s 4.8MB/s
+Completed 198785 of 262144 requests, 75.8% 4713.6/s 4.7MB/s
+Completed 203730 of 262144 requests, 77.7% 4944.2/s 5.0MB/s
+Completed 208630 of 262144 requests, 79.6% 4900.8/s 4.9MB/s
+Completed 213461 of 262144 requests, 81.4% 4831.1/s 4.9MB/s
+Completed 218273 of 262144 requests, 83.3% 4811.3/s 4.8MB/s
+Completed 223101 of 262144 requests, 85.1% 4828.0/s 4.9MB/s
+Completed 227884 of 262144 requests, 86.9% 4783.8/s 4.8MB/s
+Completed 232650 of 262144 requests, 88.7% 4765.8/s 4.8MB/s
+Completed 237666 of 262144 requests, 90.7% 5014.9/s 5.0MB/s
+Completed 242622 of 262144 requests, 92.6% 4957.3/s 5.0MB/s
+Completed 247499 of 262144 requests, 94.4% 4877.0/s 4.9MB/s
+Completed 252352 of 262144 requests, 96.3% 4852.4/s 4.9MB/s
+Completed 256687 of 262144 requests, 97.9% 4331.7/s 4.4MB/s
+Completed 259730 of 262144 requests, 99.1% 3045.6/s 3.1MB/s
+
+Concurrency Level:      4
+Time taken for tests:   54.495 seconds
+Complete requests:      262144
+Failed requests:        0
+Total transferred:      276701596 bytes
+Requests per second:    4810.38 [#/sec]
+Transfer rate:          4958.51 [Kbytes/sec]
+
+Connection Times (ms)
+              min      avg        max      std
+Total:        0.2      0.8       155.5      1.1
+
+Percentage of the requests served within a certain time (ms)
+   50%      0.7 ms
+   66%      0.8 ms
+   80%      0.9 ms
+   90%      1.1 ms
+   95%      1.4 ms
+   98%      2.1 ms
+   99%      2.8 ms
+  100%    155.5 ms
+
+------------ Randomly Reading Benchmark ----------
+Completed 15397 of 262144 requests, 5.9% 15396.2/s 15.5MB/s
+Completed 31789 of 262144 requests, 12.1% 16392.8/s 16.5MB/s
+Completed 47799 of 262144 requests, 18.2% 16009.9/s 16.1MB/s
+Completed 64376 of 262144 requests, 24.6% 16570.8/s 16.7MB/s
+Completed 80579 of 262144 requests, 30.7% 16209.1/s 16.3MB/s
+Completed 97004 of 262144 requests, 37.0% 16425.1/s 16.5MB/s
+Completed 112831 of 262144 requests, 43.0% 15826.7/s 15.9MB/s
+Completed 128849 of 262144 requests, 49.2% 16018.2/s 16.1MB/s
+Completed 144906 of 262144 requests, 55.3% 16057.0/s 16.2MB/s
+Completed 160921 of 262144 requests, 61.4% 16014.0/s 16.1MB/s
+Completed 177444 of 262144 requests, 67.7% 16476.9/s 16.6MB/s
+Completed 193461 of 262144 requests, 73.8% 16063.0/s 16.2MB/s
+Completed 209574 of 262144 requests, 79.9% 16113.0/s 16.2MB/s
+Completed 225843 of 262144 requests, 86.2% 16268.9/s 16.4MB/s
+Completed 242068 of 262144 requests, 92.3% 16225.0/s 16.3MB/s
+Completed 258417 of 262144 requests, 98.6% 16349.1/s 16.5MB/s
+
+Concurrency Level:      4
+Time taken for tests:   16.244 seconds
+Complete requests:      262144
+Failed requests:        0
+Total transferred:      276676929 bytes
+Requests per second:    16138.16 [#/sec]
+Transfer rate:          16633.63 [Kbytes/sec]
+
+Connection Times (ms)
+              min      avg        max      std
+Total:        0.0      0.2       19.4      0.5
+
+Percentage of the requests served within a certain time (ms)
+   50%      0.1 ms
+   66%      0.2 ms
+   90%      0.3 ms
+   95%      0.4 ms
+   98%      1.0 ms
+   99%      2.1 ms
+  100%     19.4 ms
+/ # 
